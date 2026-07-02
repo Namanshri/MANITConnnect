@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>CampusPath - Mentor</title>
+
+<link rel="stylesheet" href="mentor.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">
+
+<h1>CampusPath</h1>
+
+<p>Premium Guidance</p>
+
+</div>
+
+<ul>
+
+<li><a href="../Dashboard/dashboard.html">Dashboard</a></li>
+
+<li>Experiences</li>
+
+<li>Mentors</li>
+
+<li>AI Advisor</li>
+
+<li>Community</li>
+
+<li>Your Library</li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<img
+
+id="mentorImage"
+
+src=""
+
+>
+
+</div>
+
+<div class="hero-right">
+
+<h1 id="mentorName">
+
+Loading...
+
+</h1>
+
+<h2 id="mentorRole">
+
+Loading...
+
+</h2>
+
+<p id="mentorCompany">
+
+Loading...
+
+</p>
+
+<div class="hero-info">
+
+<p id="mentorPackage">
+
+💰 Loading...
+
+</p>
+
+<p id="mentorCgpa">
+
+⭐ Loading...
+
+</p>
+
+<p id="mentorType">
+
+🎓 Loading...
+
+</p>
+
+<p id="mentorExperienceCount">
+
+🧳 Loading...
+
+</p>
+
+</div>
+
+<div class="tags">
+
+<span>Java</span>
+
+<span>DSA</span>
+
+<span>SQL</span>
+
+<span>React</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= TOGGLE ================= -->
+
+<section class="top-toggle">
+
+<button
+
+id="journeyBtn"
+
+class="active"
+
+>
+
+My Journey
+
+</button>
+
+<button
+
+id="guidanceBtn"
+
+>
+
+Guidance
+
+</button>
+
+</section>
+
+<!-- ================= JOURNEY ================= -->
+
+<section id="journeySection">
+
+<!-- Placement | Internship -->
+
+<div class="experience-toggle">
+
+<button
+
+id="placementBtn"
+
+class="active-exp"
+
+>
+
+Placements
+
+</button>
+
+<button
+
+id="internshipBtn"
+
+>
+
+Internships
+
+</button>
+
+</div>
+
+<!-- Experience Chips -->
+
+<div
+
+id="experienceChips"
+
+class="chips"
+
+>
+
+<!-- Generated dynamically -->
+
+</div>
+
+<!-- Experience Details -->
+
+<div
+
+id="experienceDetails"
+
+>
+
+<!-- Generated dynamically -->
+
+</div>
+
+</section>
+<!-- ================= GUIDANCE ================= -->
+
+<section id="guidanceSection" style="display:none;">
+
+<div class="year-buttons">
+
+<button
+
+class="year-btn active-year"
+
+data-year="1"
+
+>
+
+1st Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="2"
+
+>
+
+2nd Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="3"
+
+>
+
+3rd Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="4"
+
+>
+
+4th Year
+
+</button>
+
+</div>
+
+<!-- Dynamic Guidance -->
+
+<div
+
+id="guidanceContent"
+
+>
+
+<!-- Guidance loaded from backend -->
+
+</div>
+
+</section>
+<!-- ================= GUIDANCE ================= -->
+
+<section id="guidanceSection" style="display:none;">
+
+<div class="year-buttons">
+
+<button
+
+class="year-btn active-year"
+
+data-year="1"
+
+>
+
+1st Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="2"
+
+>
+
+2nd Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="3"
+
+>
+
+3rd Year
+
+</button>
+
+<button
+
+class="year-btn"
+
+data-year="4"
+
+>
+
+4th Year
+
+</button>
+
+</div>
+
+<!-- Dynamic Guidance -->
+
+<div
+
+id="guidanceContent"
+
+>
+
+<!-- Guidance loaded from backend -->
+
+</div>
+
+</section>
+</div>
+
+<!-- ================= LOADING ================= -->
+
+<div
+id="loadingOverlay"
+class="loading-overlay"
+style="display:none;">
+
+<div class="loading-card">
+
+<div class="loader"></div>
+
+<h3>
+
+Loading Mentor Profile...
+
+</h3>
+
+</div>
+
+</div>
+
+<!-- ================= ERROR ================= -->
+
+<div
+id="errorBox"
+class="error-box"
+style="display:none;">
+
+<h2>
+
+Unable to Load Mentor
+
+</h2>
+
+<p>
+
+Please try again later.
+
+</p>
+
+</div>
+
+<script src="mentor.js"></script>
+
+</body>
+
+</html>

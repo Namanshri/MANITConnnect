@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPath | Contribute</title>
+
+    <link rel="stylesheet"
+          href="contribute1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--  NAVBAR  -->
+
+    <nav>
+
+        <div class="logo">
+
+            <h1>CampusPath</h1>
+
+            <p>Premium Career Guidance</p>
+
+        </div>
+
+        <ul>
+
+            <li>Dashboard</li>
+
+            <li>Experiences</li>
+
+            <li>Mentors</li>
+
+            <li>AI Advisor</li>
+
+            <li>Community</li>
+
+            <li>Your Library</li>
+
+        </ul>
+
+    </nav>
+
+    <!--  HERO  -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <h2>
+
+                Share Your Journey
+
+            </h2>
+
+            <p>
+
+                Help thousands of juniors by sharing your internship or
+                placement experience.
+
+            </p>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="step">
+
+                Step <span>1</span> of 2
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  PROGRESS  -->
+
+    <section class="progress-section">
+
+        <div class="progress-track">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+    </section>
+
+    <!--  FORM  -->
+
+    <section class="form-card">
+
+        <h3>
+
+            Basic Details
+
+        </h3>
+
+        <p>
+
+            These details will appear on your mentor profile.
+
+        </p>
+
+        <form id="mentorForm">
+
+            <div class="form-grid">
+
+                <!-- Full Name -->
+
+                <div class="input-group">
+
+                    <label>
+
+                                               Full Name
+
+                    </label>
+
+                    <input
+                        id="fullName"
+                        type="text"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <!-- Company -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Company
+
+                    </label>
+
+                    <input
+                        id="company"
+                        type="text"
+                        placeholder="Google"
+                        required>
+
+                </div>
+
+                <!-- Role -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Role
+
+                    </label>
+
+                    <input
+                        id="role"
+                        type="text"
+                        placeholder="Software Engineer"
+                        required>
+
+                </div>
+
+                <!-- Package -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Annual Package
+
+                    </label>
+
+                    <input
+                        id="package"
+                        type="text"
+                        placeholder="44 LPA"
+                        required>
+
+                </div>
+
+                <!-- CGPA -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        CGPA
+
+                    </label>
+
+                    <input
+                        id="cgpa"
+                        type="number"
+                        step="0.01"
+                        placeholder="8.41"
+                        required>
+
+                </div>
+
+                <!-- Experience Type -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Experience Type
+
+                    </label>
+
+                    <select
+                        id="experienceType"
+                        required>
+
+                        <option value="">
+
+                            Select
+
+                        </option>
+
+                        <option value="Placement">
+
+                            Placement
+
+                        </option>
+
+                        <option value="Internship">
+
+                            Internship
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- Placement Mode -->
+
+            <div class="mode-card">
+
+                <label class="mode-title">
+
+                    Placement Mode
+
+                </label>
+
+                <div class="radio-group">
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="placementMode"
+                            value="On-Campus"
+                            checked>
+
+                        <span>
+
+                            On Campus
+
+                        </span>
+
+                    </label>
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="placementMode"
+                            value="Off-Campus">
+
+                        <span>
+
+                            Off Campus
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Information Box -->
+
+            <div class="info-box">
+
+                <h4>
+
+                    What happens next?
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        Your journey will be shown to juniors.
+
+                    </li>
+
+                    <li>
+
+                        Guidance questions are completely optional.
+
+                    </li>
+
+                    <li>
+
+                        You can add multiple internship or placement experiences later.
+
+                    </li>
+
+                </ul>
+
+            </div>            <!-- Buttons -->
+
+            <div class="button-section">
+
+                <button
+                    type="button"
+                    class="secondary-btn">
+
+                    Save Draft
+
+                </button>
+
+                <button
+                    type="submit"
+                    id="continueBtn"
+                    class="primary-btn">
+
+                    Continue →
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!--  WHY SHARE  -->
+
+    <section class="benefits-card">
+
+        <h3>
+
+            Why Share Your Experience?
+
+        </h3>
+
+        <div class="benefit-grid">
+
+            <div class="benefit">
+
+                <div class="icon">
+
+                    🎯
+
+                </div>
+
+                <h4>
+
+                    Guide Juniors
+
+                </h4>
+
+                <p>
+
+                    Your experience can help juniors avoid common mistakes and prepare better.
+
+                </p>
+
+            </div>
+
+            <div class="benefit">
+
+                <div class="icon">
+
+                    💼
+
+                </div>
+
+                <h4>
+
+                    Showcase Your Journey
+
+                </h4>
+
+                <p>
+
+                    Build your public mentor profile on CampusPath.
+
+                </p>
+
+            </div>
+
+            <div class="benefit">
+
+                <div class="icon">
+
+                    🚀
+
+                </div>
+
+                <h4>
+
+                    Build Community
+
+                </h4>
+
+                <p>
+
+                    Help create the largest student-driven placement knowledge base.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+
+                CampusPath
+
+            </h3>
+
+            <p>
+
+                Learn • Share • Grow
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</div><!-- JAVASCRIPT  -->
+
+<script src="contribute1.js"></script>
+
+</body>
+
+</html>

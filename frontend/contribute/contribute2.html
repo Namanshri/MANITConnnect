@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPath | Share Experience</title>
+
+    <link rel="stylesheet"
+          href="contribute2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NAVBAR  -->
+
+<nav>
+
+    <div class="logo">
+
+        <h1>CampusPath</h1>
+
+        <p>Premium Guidance</p>
+
+    </div>
+
+    <ul>
+
+        <a href="../dashboard/dashboard.html">
+
+            <li>Dashboard</li>
+
+        </a>
+
+        <li>Experiences</li>
+
+        <li>Mentors</li>
+
+        <li>AI Advisor</li>
+
+        <li>Community</li>
+
+        <li>Your Library</li>
+
+    </ul>
+
+</nav>
+
+<!-- HERO  -->
+
+<section class="hero">
+
+    <h1>
+
+        Share Your Experience
+
+    </h1>
+
+    <p>
+
+        Help juniors by sharing your placement and internship journey.
+
+    </p>
+
+</section>
+
+<!--  TOGGLE = -->
+
+<section class="top-toggle">
+
+    <button
+        id="journeyBtn"
+        class="active">
+
+        My Journey
+
+    </button>
+
+    <button
+        id="guidanceBtn">
+
+        Guidance (Optional)
+
+    </button>
+
+</section>
+
+<!--  JOURNEY = -->
+
+<section id="journeySection">
+
+<!-- Preparation Strategy -->
+
+<div class="card">
+
+<h2>
+
+Preparation Strategy
+
+</h2>
+
+<textarea
+
+id="preparationStrategy"
+
+placeholder="How did you prepare?"
+
+></textarea>
+
+<div class="media-row">
+
+<button
+class="audio-btn">
+
+🎙️ Record Audio
+
+</button>
+
+<button
+class="video-btn">
+
+📎 Add Video
+
+</button>
+
+<input
+
+type="file"
+
+accept="video/*"
+
+class="hidden-video">
+
+</div>
+
+<video
+
+class="video-preview"
+
+controls
+
+style="display:none">
+
+</video>
+
+</div>
+<!--  CORE SKILLS  -->
+
+<div class="card">
+
+    <h2>
+
+        Core Skills
+
+    </h2>
+
+    <textarea
+
+        id="coreSkills"
+
+        placeholder="Java, DSA, SQL, React..."
+
+    ></textarea>
+
+    <div class="media-row">
+
+        <button
+            class="audio-btn">
+
+            🎙️ Record Audio
+
+        </button>
+
+        <button
+            class="video-btn">
+
+            📎 Add Video
+
+        </button>
+
+        <input
+
+            type="file"
+
+            accept="video/*"
+
+            class="hidden-video">
+
+    </div>
+
+    <video
+
+        class="video-preview"
+
+        controls
+
+        style="display:none">
+
+    </video>
+
+</div>
+
+<!--  RESOURCES  -->
+
+<div class="card">
+
+    <h2>
+
+        Resources Used
+
+    </h2>
+
+    <textarea
+
+        id="resourcesUsed"
+
+        placeholder="Books, YouTube channels, courses..."
+
+    ></textarea>
+
+    <div class="media-row">
+
+        <button
+            class="audio-btn">
+
+            🎙️ Record Audio
+
+        </button>
+
+        <button
+            class="video-btn">
+
+            📎 Add Video
+
+        </button>
+
+        <input
+
+            type="file"
+
+            accept="video/*"
+
+            class="hidden-video">
+
+    </div>
+
+    <video
+
+        class="video-preview"
+
+        controls
+
+        style="display:none">
+
+    </video>
+
+</div>
+
+<!--  TIMELINE  -->
+
+<div class="card">
+
+    <h2>
+
+        Interview Timeline
+
+    </h2>
+
+    <textarea
+
+        id="timeline"
+
+        placeholder="June → Java, July → DSA..."
+
+    ></textarea>
+
+    <div class="media-row">
+
+        <button
+            class="audio-btn">
+
+            🎙️ Record Audio
+
+        </button>
+
+        <button
+            class="video-btn">
+
+            📎 Add Video
+
+        </button>
+
+        <input
+
+            type="file"
+
+            accept="video/*"
+
+            class="hidden-video">
+
+    </div>
+
+    <video
+
+        class="video-preview"
+
+        controls
+
+        style="display:none">
+
+    </video>
+
+</div>
+
+<!--  MISTAKES  -->
+
+<div class="card">
+
+    <h2>
+
+        Mistakes To Avoid
+
+    </h2>
+
+    <textarea
+
+        id="mistakes"
+
+        placeholder="What mistakes should juniors avoid?"
+
+    ></textarea>
+
+    <div class="media-row">
+
+        <button
+            class="audio-btn">
+
+            🎙️ Record Audio
+
+        </button>
+
+        <button
+            class="video-btn">
+
+            📎 Add Video
+
+        </button>
+
+        <input
+
+            type="file"
+
+            accept="video/*"
+
+            class="hidden-video">
+
+    </div>
+
+    <video
+
+        class="video-preview"
+
+        controls
+
+        style="display:none">
+
+    </video>
+
+</div>
+
+<!--  INTERVIEW ROUNDS  -->
+
+<div class="card">
+
+    <h2>
+
+        Interview Rounds
+
+    </h2>
+
+    <textarea
+
+        id="interviewRounds"
+
+        placeholder="OA → Technical → HR"
+
+    ></textarea>
+
+    <div class="media-row">
+
+        <button
+            class="audio-btn">
+
+            🎙️ Record Audio
+
+        </button>
+
+        <button
+            class="video-btn">
+
+            📎 Add Video
+
+        </button>
+
+        <input
+
+            type="file"
+
+            accept="video/*"
+
+            class="hidden-video">
+
+    </div>
+
+    <video
+
+        class="video-preview"
+
+        controls
+
+        style="display:none">
+
+    </video>
+
+</div>
+
+</section>
+<!--  GUIDANCE  -->
+
+<section id="guidanceSection">
+
+    <div class="year-buttons">
+
+        <button
+            class="year-btn active-year"
+            data-year="1">
+
+            1st Year
+
+        </button>
+
+        <button
+            class="year-btn"
+            data-year="2">
+
+            2nd Year
+
+        </button>
+
+        <button
+            class="year-btn"
+            data-year="3">
+
+            3rd Year
+
+        </button>
+
+        <button
+            class="year-btn"
+            data-year="4">
+
+            4th Year
+
+        </button>
+
+    </div>
+
+    <!-- Questions will be generated by contribute2.js -->
+
+    <div id="guidanceContent">
+
+    </div>
+
+</section>
+
+<!--  BOTTOM BUTTONS  -->
+
+<section class="bottom-buttons">
+
+    <button
+        type="button"
+        class="back-btn"
+        id="backBtn">
+
+        ← Back
+
+    </button>
+
+    <button
+        type="button"
+        class="submit-btn"
+        id="submitExperience">
+
+        Submit →
+
+    </button>
+
+</section>
+
+<!--  LOADING POPUP  -->
+
+<div
+id="loadingOverlay"
+class="loading-overlay"
+style="display:none;">
+
+    <div class="loading-card">
+
+        <div class="loader"></div>
+
+        <h3>
+
+            Saving Your Experience...
+
+        </h3>
+
+        <p>
+
+            Please wait while we store your contribution.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!--  SUCCESS POPUP  -->
+
+<div
+id="successOverlay"
+class="loading-overlay"
+style="display:none;">
+
+    <div class="loading-card">
+
+        <h2>
+
+            🎉 Thank You!
+
+        </h2>
+
+        <p>
+
+            Your experience has been shared successfully.
+
+        </p>
+
+        <button
+            id="continueSuccess">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+<!--  JAVASCRIPT  -->
+<script src="guidanceQuestions.js"></script>
+
+<script src="contribute2.js"></script>
+
+</body>
+
+</html>
