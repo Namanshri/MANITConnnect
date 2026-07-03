@@ -1,6 +1,6 @@
 /* CAMPUSPATH MENTOR PROFILE */
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://manitconnnect-2.onrender.com";
 
 /*  GET MENTOR ID */
 
