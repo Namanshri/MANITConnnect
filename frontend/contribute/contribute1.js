@@ -56,7 +56,7 @@ mentorForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/mentor",
+            "https://manitconnnect-2.onrender.com",
             {
 
                 method: "POST",
