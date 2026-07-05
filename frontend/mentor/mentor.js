@@ -111,7 +111,7 @@ async function fetchMentor() {
 
         const response = await fetch(
 
-            `${BASE_URL}/mentor/${mentorId}`
+            `${BASE_URL}/api/mentor/${mentorId}`
 
         );
 
@@ -431,7 +431,7 @@ async function fetchGuidance(){
 
         const response = await fetch(
 
-            `${BASE_URL}/guidance/${mentorId}`
+            `${BASE_URL}/api/guidance/${mentorId}`
 
         );
 
@@ -637,4 +637,3 @@ function showError(message) {
     }
 
 }
-fetchMentor();
