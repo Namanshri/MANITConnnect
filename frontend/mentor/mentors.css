@@ -1,0 +1,258 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+}
+
+body{
+
+    background:#f5f7fb;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 50px;
+
+    background:white;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+.navbar h1{
+
+    color:#6C4CF1;
+
+}
+
+.navbar nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:600;
+
+}
+
+.navbar a:hover{
+
+    color:#6C4CF1;
+
+}
+
+.active{
+
+    color:#6C4CF1;
+
+}
+
+/* HERO */
+
+.hero{
+
+    text-align:center;
+
+    padding:40px 20px 20px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    color:#666;
+
+}
+
+/* FILTERS */
+
+.filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:30px 0;
+
+}
+
+.filters input,
+
+.filters select{
+
+    padding:12px;
+
+    width:250px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+/* MENTOR GRID */
+
+.mentor-container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    padding-bottom:50px;
+
+}
+
+/* CARD */
+
+.mentor-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.mentor-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.mentor-image{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#ddd;
+
+    margin:auto;
+
+    margin-bottom:15px;
+
+}
+
+.mentor-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.mentor-card p{
+
+    margin:6px 0;
+
+    color:#555;
+
+}
+
+.package{
+
+    color:#6C4CF1;
+
+    font-weight:bold;
+
+}
+
+.type{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#eee6ff;
+
+    color:#6C4CF1;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+.view-profile-btn{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#6C4CF1;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-profile-btn:hover{
+
+    background:#5136d9;
+
+}
