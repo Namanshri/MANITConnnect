@@ -16,11 +16,15 @@ const experienceRoutes = require("./routes/experienceRoutes");
 
 const guidanceRoutes = require("./routes/guidanceRoutes");
 
+const insightRoutes = require("./routes/insightRoutes");
+
 app.use("/api/mentor",mentorRoutes);
 
 app.use("/api/experience",experienceRoutes);
 
 app.use("/api/guidance",guidanceRoutes);
+
+app.use("/api/insight", insightRoutes);
 
 app.get("/",(req,res)=>{
 
