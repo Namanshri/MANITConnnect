@@ -20,21 +20,6 @@ let insights = [];
 
 let filteredInsights = [];
 
-/* CHECK IF USER IS A MENTOR */
-
-const mentorId = sessionStorage.getItem("mentor_id");
-
-if (mentorId) {
-
-    writeInsightBtn.style.display = "block";
-
-    writeInsightBtn.onclick = () => {
-
-        window.location.href = "writeInsight.html";
-
-    };
-
-}
 
 /* FETCH INSIGHTS */
 
