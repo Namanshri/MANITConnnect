@@ -8,7 +8,7 @@ const internshipCount = document.getElementById("internshipCount");
 
 const recentMentors = document.getElementById("recentMentors");
 
-const recentExperiences = document.getElementById("recentExperiences");
+const recentinsights = document.getElementById("recentinsights");
 
 let mentors = [];
 
@@ -36,7 +36,7 @@ async function loadDashboard() {
 
         renderRecentMentors();
 
-        loadRecentExperiences();
+        loadRecentinsights();
 
     }
 
@@ -152,9 +152,9 @@ function openProfile(id){
 
 }
 
-/* EXPERIENCES */
+/* insights */
 
-async function loadRecentExperiences(){
+async function loadRecentinsights(){
 
     try{
 
@@ -170,17 +170,17 @@ async function loadRecentExperiences(){
 
         }
 
-        const experiences = await response.json();
+        const insights = await response.json();
 
-        recentExperiences.innerHTML = "";
+        recentinsights.innerHTML = "";
 
-        experiences
+        insights
 
         .slice(0,5)
 
         .forEach(exp=>{
 
-            recentExperiences.innerHTML += `
+            recentinsights.innerHTML += `
 
             <div class="experience-card">
 

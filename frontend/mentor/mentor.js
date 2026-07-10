@@ -93,11 +93,11 @@ guidanceBtn.onclick = () => {
 
 let mentor = {};
 
-let experiences = [];
+let insights = [];
 
-let placementExperiences = [];
+let placementinsights = [];
 
-let internshipExperiences = [];
+let internshipinsights = [];
 
 let currentType = "Placement";
 
@@ -126,14 +126,14 @@ async function fetchMentor() {
 
 mentor = data.mentor;
 
-experiences = data.experiences || [];
+insights = data.insights || [];
 
-console.log("Experiences:", experiences);
-console.log("Experiences Length:", experiences.length);
+console.log("insights:", insights);
+console.log("insights Length:", insights.length);
 
         mentor = data.mentor;
 
-        experiences = data.experiences || [];
+        insights = data.insights || [];
 
         mentorName.textContent = mentor.full_name;
 
@@ -151,11 +151,11 @@ console.log("Experiences Length:", experiences.length);
             `🎓 ${mentor.experience_type}`;
 
         mentorExperienceCount.textContent =
-            `🧳 ${experiences.length} Experience(s) Shared`;
+            `🧳 ${insights.length} Experience(s) Shared`;
 
-        placementExperiences = experiences;
+        placementinsights = insights;
 
-internshipExperiences = [];
+internshipinsights = [];
 
         renderExperienceChips();
 
@@ -213,9 +213,9 @@ function renderExperienceChips() {
 
         currentType === "Placement"
 
-        ? placementExperiences
+        ? placementinsights
 
-        : internshipExperiences;
+        : internshipinsights;
 
     if(list.length===0){
 
@@ -231,7 +231,7 @@ function renderExperienceChips() {
 
             <p>
 
-                This mentor hasn't shared any ${currentType.toLowerCase()} experiences yet.
+                This mentor hasn't shared any ${currentType.toLowerCase()} insights yet.
 
             </p>
 
@@ -282,9 +282,9 @@ function renderExperienceDetails(index){
 
         currentType==="Placement"
 
-        ? placementExperiences
+        ? placementinsights
 
-        : internshipExperiences;
+        : internshipinsights;
 
     const experience=list[index];
 
