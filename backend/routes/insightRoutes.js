@@ -10,7 +10,10 @@ const {
 
     getInsightById,
 
-    getInsightsByMentor
+    getInsightsByMentor,
+
+    increaseHelpfulCount
+
 
 } = require("../controllers/insightController");
 
@@ -45,6 +48,13 @@ router.get(
 
 );
 
+router.post(
+
+    "/:id/helpful",
+
+    increaseHelpfulCount
+
+);
 /* GET INSIGHT BY ID */
 
 router.get(

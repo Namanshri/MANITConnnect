@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPath | Insight</title>
+
+    <link
+        rel="stylesheet"
+        href="insight.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>
+
+            CampusPath
+
+        </h1>
+
+        <nav>
+
+            <a href="../Dashboard/dashboard.html">
+
+                Dashboard
+
+            </a>
+
+            <a href="insights.html">
+
+                Insights
+
+            </a>
+
+            <a href="../mentor/mentors.html">
+
+                Mentors
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <button
+            id="backBtn"
+            class="back-btn">
+
+            ← Back to Insights
+
+        </button>
+
+        <div class="category">
+
+            <span id="category">
+
+                Placement
+
+            </span>
+
+        </div>
+
+        <h1 id="title">
+
+            Loading...
+
+        </h1>
+
+        <div class="meta">
+
+            <span id="mentorName"></span>
+
+            •
+
+            <span id="company"></span>
+
+            •
+
+            <span id="role"></span>
+
+        </div>
+
+        <div
+            id="tagContainer"
+            class="tags">
+
+        </div>
+
+        <article
+            id="content"
+            class="content">
+
+        </article>
+
+        <div class="helpful-box">
+
+            <button
+                id="helpfulBtn">
+
+                👍 Helpful
+
+            </button>
+
+            <span
+                id="helpfulCount">
+
+                0 people found this helpful
+
+            </span>
+
+        </div>
+
+        <section class="author-card">
+
+            <h2>
+
+                About the Author
+
+            </h2>
+
+            <h3
+                id="authorName">
+
+            </h3>
+
+            <p
+                id="authorCompany">
+
+            </p>
+
+            <button
+                id="mentorProfileBtn">
+
+                View Mentor Profile
+
+            </button>
+
+        </section>
+
+        <section>
+
+            <h2>
+
+                Related Insights
+
+            </h2>
+
+            <div
+                id="relatedInsights"
+                class="related-container">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="insight.js"></script>
+
+</body>
+
+</html>

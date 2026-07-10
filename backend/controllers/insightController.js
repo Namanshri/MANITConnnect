@@ -90,13 +90,29 @@ const getAllInsights = async (req, res) => {
 
         const result = await pool.query(
 
-            `SELECT *
+    `SELECT
 
-             FROM insights
+        insights.*,
 
-             ORDER BY created_at DESC`
+        mentors.full_name,
 
-        );
+        mentors.company,
+
+        mentors.role,
+
+        mentors.package_lpa,
+
+        mentors.experience_type
+
+     FROM insights
+
+     JOIN mentors
+
+     ON insights.mentor_id = mentors.mentor_id
+
+     ORDER BY insights.created_at DESC`
+
+);
 
         res.json(result.rows);
 
@@ -126,11 +142,27 @@ const getInsightById = async (req, res) => {
 
         const result = await pool.query(
 
-            `SELECT *
+           `SELECT
 
-             FROM insights
+    insights.*,
 
-             WHERE insight_id=$1`,
+    mentors.full_name,
+
+    mentors.company,
+
+    mentors.role,
+
+    mentors.package_lpa,
+
+    mentors.experience_type
+
+FROM insights
+
+JOIN mentors
+
+ON insights.mentor_id = mentors.mentor_id
+
+WHERE insight_id=$1`,
 
             [id]
 
@@ -164,13 +196,29 @@ const getInsightsByMentor = async (req, res) => {
 
         const result = await pool.query(
 
-            `SELECT *
+           `SELECT
 
-             FROM insights
+    insights.*,
 
-             WHERE mentor_id=$1
+    mentors.full_name,
 
-             ORDER BY created_at DESC`,
+    mentors.company,
+
+    mentors.role,
+
+    mentors.package_lpa,
+
+    mentors.experience_type
+
+FROM insights
+
+JOIN mentors
+
+ON insights.mentor_id = mentors.mentor_id
+
+WHERE insights.mentor_id=$1
+
+ORDER BY insights.created_at DESC`,
 
             [mentorId]
 
@@ -193,6 +241,45 @@ const getInsightsByMentor = async (req, res) => {
     }
 
 };
+const increaseHelpfulCount = async (req,res)=>{
+
+    try{
+
+        const id=req.params.id;
+
+        await pool.query(
+
+            `UPDATE insights
+
+             SET helpful_count = helpful_count + 1
+
+             WHERE insight_id = $1`,
+
+            [id]
+
+        );
+
+        res.json({
+
+            message:"Helpful Added"
+
+        });
+
+    }
+
+    catch(err){
+
+        console.log(err);
+
+        res.status(500).json({
+
+            message:"Database Error"
+
+        });
+
+    }
+
+};
 
 module.exports = {
 
@@ -202,6 +289,8 @@ module.exports = {
 
     getInsightById,
 
-    getInsightsByMentor
+    getInsightsByMentor,
+
+    increaseHelpfulCount
 
 };

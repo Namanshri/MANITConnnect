@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Write Insight</title>
+
+    <link rel="stylesheet" href="writeInsight.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+
+            Write an Insight
+
+        </h1>
+
+        <form id="insightForm">
+
+            <label>
+
+                Title
+
+            </label>
+
+            <input
+
+                type="text"
+
+                id="title"
+
+                placeholder="Enter blog title"
+
+                required>
+
+            <label>
+
+                Category
+
+            </label>
+
+            <select id="category">
+
+                <option value="Placement">
+
+                    Placement
+
+                </option>
+
+                <option value="Internship">
+
+                    Internship
+
+                </option>
+
+                <option value="Resume">
+
+                    Resume
+
+                </option>
+
+                <option value="DSA">
+
+                    DSA
+
+                </option>
+
+                <option value="OA">
+
+                    OA
+
+                </option>
+
+                <option value="HR">
+
+                    HR
+
+                </option>
+
+                <option value="Career">
+
+                    Career
+
+                </option>
+
+            </select>
+
+            <label>
+
+    Tags
+
+</label>
+
+<div id="tagBox" class="tag-box">
+
+    <div id="selectedTags"></div>
+
+    <input
+
+        type="text"
+
+        id="tagInput"
+
+        placeholder="Type a tag and press Enter">
+
+</div>
+
+            <label>
+
+                Blog Content
+
+            </label>
+
+            <textarea
+
+                id="content"
+
+                rows="15"
+
+                placeholder="Write your complete experience here..."
+
+                required>
+
+            </textarea>
+
+            <button type="submit">
+
+                Publish Insight
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="writeInsight.js"></script>
+
+</body>
+
+</html>
