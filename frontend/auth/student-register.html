@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MANITConnect | Student Registration</title>
+
+    <link rel="stylesheet" href="student-register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- LEFT PANEL -->
+
+    <section class="left-panel">
+
+        <div class="brand">
+
+            <h1>
+
+                MANITConnect
+
+            </h1>
+
+            <p>
+
+                Learn. Share. Grow.
+
+            </p>
+
+        </div>
+
+        <div class="welcome">
+
+            <h2>
+
+                Welcome to<br>
+
+                MANITConnect!
+
+            </h2>
+
+            <p>
+
+                Join a community of learners and achievers.
+
+                Learn from seniors and prepare smarter for internships and placements.
+
+            </p>
+
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <span>
+
+                    Learn from Real Experiences
+
+                </span>
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>
+
+                    Career Insights
+
+                </span>
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <span>
+
+                    Connect & Grow Together
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="quote">
+
+            <p>
+
+                "Alone we can do so little;
+
+                together we can do so much."
+
+            </p>
+
+            <h4>
+
+                — Helen Keller
+
+            </h4>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT PANEL -->
+
+    <section class="right-panel">
+
+        <div class="form-container">
+
+            <h1>
+
+                Student Registration
+
+            </h1>
+
+            <p>
+
+                Create your account to get started.
+
+            </p>
+
+            <form id="studentForm">
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Full Name
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input
+
+                            type="text"
+
+                            id="fullName"
+
+                            placeholder="Enter your full name"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Email Address
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+
+                            type="email"
+
+                            id="email"
+
+                            placeholder="Enter your email"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- YEAR -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Graduation Year
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <select id="graduationYear" required>
+
+                            <option value="">
+
+                                Select Graduation Year
+
+                            </option>
+
+                            <option>2026</option>
+
+                            <option>2027</option>
+
+                            <option>2028</option>
+
+                            <option>2029</option>
+
+                            <option>2030</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- DEPARTMENT -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Degree / Department
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        <select id="department" required>
+
+                            <option value="">
+
+                                Select Degree / Department
+
+                            </option>
+
+                            <option>B.Tech Computer Science & Engineering (CSE)</option>
+
+                            <option>B.Tech Information Technology (IT)</option>
+
+                            <option>B.Tech Electronics & Communication Engineering (ECE)</option>
+
+                            <option>B.Tech Electrical Engineering (EE)</option>
+
+                            <option>B.Tech Electronics & Instrumentation Engineering (E&I)</option>
+
+                            <option>B.Tech Mechanical Engineering</option>
+
+                            <option>B.Tech Civil Engineering</option>
+
+                            <option>B.Tech Chemical Engineering</option>
+
+                            <option>B.Tech Metallurgical & Materials Engineering</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        Password
+
+                    </label>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+
+                            type="password"
+
+                            id="password"
+
+                            placeholder="Create a password"
+
+                            required>
+
+                        <button
+
+                            type="button"
+
+                            id="togglePassword">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <p id="strengthText">
+
+                        Password Strength
+
+                    </p>
+
+                </div>
+
+                <button
+
+                    class="register-btn"
+
+                    type="submit">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <p class="bottom-text">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="student-register.js"></script>
+
+</body>
+
+</html>
