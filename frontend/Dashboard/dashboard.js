@@ -8,7 +8,8 @@ const internshipCount = document.getElementById("internshipCount");
 
 const recentMentors = document.getElementById("recentMentors");
 
-const recentinsights = document.getElementById("recentinsights");
+const recentInsights =
+document.getElementById("recentInsights");
 
 let mentors = [];
 
@@ -32,11 +33,11 @@ async function loadDashboard() {
 
         mentors = await response.json();
 
-        updateStatistics();
+        //updateStatistics();
 
         renderRecentMentors();
 
-        loadRecentinsights();
+        loadRecentInsights();
 
     }
 
@@ -78,61 +79,75 @@ function renderRecentMentors() {
 
     .slice(0,6)
 
-    .forEach(mentor => {
+    .forEach(mentor=>{
 
         recentMentors.innerHTML += `
 
-        <div class="mentor-card">
+        <div class="card">
 
-            <div class="mentor-image"></div>
+            <div class="top">
 
-            <h3>
+                <img
 
-                ${mentor.full_name}
+                src="https://ui-avatars.com/api/?name=${encodeURIComponent(mentor.full_name)}&background=8a00ff&color=ffffff"
 
-            </h3>
+                >
 
-            <p>
+                <div>
 
-                ${mentor.company}
+                    <h3>
 
-            </p>
+                        ${mentor.full_name}
 
-            <p>
+                    </h3>
+
+                    <p>
+
+                        ${mentor.company}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <span class="tag">
 
                 ${mentor.role}
 
-            </p>
+            </span>
 
-            <p class="package">
+            <h2>
 
                 ${mentor.package_lpa} LPA
 
-            </p>
+            </h2>
 
             <p>
 
-                CGPA : ${mentor.cgpa}
+                ⭐ CGPA : ${mentor.cgpa}
 
             </p>
 
-            <span class="type">
+            <div class="buttons">
 
-                ${mentor.experience_type}
+                <button
 
-            </span>
-
-            <button
-
-                class="view-btn"
-
-                onclick="openProfile(${mentor.mentor_id})"
-
-            >
+                onclick="openProfile(${mentor.mentor_id})">
 
                 View Profile
 
-            </button>
+                </button>
+
+                <button
+
+                onclick="openProfile(${mentor.mentor_id})">
+
+                View Journey
+
+                </button>
+
+            </div>
 
         </div>
 
@@ -154,14 +169,13 @@ function openProfile(id){
 
 /* insights */
 
-async function loadRecentinsights(){
+async function loadRecentInsights(){
 
     try{
 
         const response = await fetch(
 
-            `${BASE_URL}/api/experience`
-
+        `${BASE_URL}/api/insight`
         );
 
         if(!response.ok){
@@ -172,7 +186,7 @@ async function loadRecentinsights(){
 
         const insights = await response.json();
 
-        recentinsights.innerHTML = "";
+        recentInsights.innerHTML = "";
 
         insights
 
@@ -180,7 +194,7 @@ async function loadRecentinsights(){
 
         .forEach(exp=>{
 
-            recentinsights.innerHTML += `
+            recentInsights.innerHTML += `
 
             <div class="experience-card">
 

@@ -272,3 +272,49 @@ margin-top:100px;
 padding:40px 0;
 
 }
+
+/* SECTION HEADER */
+
+.section-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin:50px 0 25px;
+
+}
+
+.section-header h2{
+
+margin:0;
+
+font-size:28px;
+
+}
+
+.section-header a{
+
+text-decoration:none;
+
+color:#8a00ff;
+
+font-weight:600;
+
+}
+
+/* INSIGHT GRID */
+
+.insight-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-bottom:40px;
+
+}
