@@ -24,7 +24,7 @@ const createExperience = async (req, res) => {
 
         const result = await pool.query(
 
-            `INSERT INTO insights
+            `INSERT INTO experiences
             (
                 mentor_id,
                 preparation_strategy,
