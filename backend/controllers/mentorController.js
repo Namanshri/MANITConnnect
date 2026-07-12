@@ -102,7 +102,7 @@ const getMentorById = async (req,res)=>{
         const insights=await pool.query(
 
             `SELECT *
-             FROM insights
+             FROM experiences
              WHERE mentor_id=$1`,
 
             [id]
