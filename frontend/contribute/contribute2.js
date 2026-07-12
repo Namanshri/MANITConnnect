@@ -296,7 +296,7 @@ submitButton.addEventListener("click", async () => {
 
         const experienceResponse = await fetch(
 
-            "https://manitconnnect-2.onrender.com/api/experience",
+            "https://manitconnect-2.onrender.com/api/experience",
 
             {
 
@@ -348,7 +348,7 @@ submitButton.addEventListener("click", async () => {
 
             await fetch(
 
-                "https://manitconnnect-2.onrender.com/api/guidance",
+                "https://manitconnect-2.onrender.com/api/guidance",
 
                 {
 

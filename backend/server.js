@@ -18,6 +18,8 @@ const guidanceRoutes = require("./routes/guidanceRoutes");
 
 const insightRoutes = require("./routes/insightRoutes");
 
+const authRoutes = require("./routes/authRoutes");
+
 app.use("/api/mentor",mentorRoutes);
 
 app.use("/api/experience",experienceRoutes);
@@ -25,6 +27,8 @@ app.use("/api/experience",experienceRoutes);
 app.use("/api/guidance",guidanceRoutes);
 
 app.use("/api/insight", insightRoutes);
+
+app.use("/api/auth", authRoutes);
 
 app.get("/",(req,res)=>{
 
@@ -38,3 +42,4 @@ app.listen(PORT,()=>{
     console.log(`Server running on port ${PORT}`);
 
 });
+
