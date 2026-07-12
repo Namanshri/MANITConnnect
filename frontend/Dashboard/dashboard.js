@@ -1,4 +1,4 @@
-const BASE_URL = "https://manitconnect-2.onrender.com";
+const BASE_URL = "https://manitconnnect-2.onrender.com";
 
 const mentorCount = document.getElementById("mentorCount");
 
